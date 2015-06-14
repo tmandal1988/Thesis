@@ -29,7 +29,8 @@
 
 \graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
 
-\usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+\usepackage[square,numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+\usepackage{setspace}
 \hypersetup{urlcolor=black, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
 \title{\ttitle} % Defines the thesis title - don't touch this
 
@@ -150,7 +151,12 @@ Date:\\
 
 \abstract{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
 
-The Thesis Abstract is written here (and usually kept to just this page). The page is kept centered vertically so can expand into the blank space above the title too\ldots
+{ \setstretch{2.0}\setlength{\parindent}{5ex}It is important for the safety of manned aircrafts to study and understand the human pilot behavior. Considerable resources are invested during the design phase of an aircraft to ensure that the aircraft has desirable handling qualities. However human pilot exhibit wide range of control behavior which is a function of external stimulus, aircraft dynamics and human psychological properties (workload, stress factor, confidence, pucker factor etc..). This variability is difficult to address comprehensively during the design phase and may lead to undesirable pilot-aircraft interaction such as Pilot Induced Oscillations (PIO). This emphasizes the need to keep track of human pilot performance during flights to monitor the Pilot Vehicle System (PVS) stability.
+
+This work focuses on studying human pilot behavior for longitudinal axis of  a remotely controlled research aircraft. The work is divided into PIO analysis and human pilot model parameter estimation. To replicate different flight conditions additional failures ( time delay, elevator rate limit, actuator failure ) were injected during the flight. For studying human pilot behavior McRuer pilot model was used whose parameters were estimated online using Kalman Filter. The estimated parameters were then used to analyze the stability of PVS and predict the onset of pilot related Loss of Control (LOC) events such as PIO.
+
+
+
 }
 
 \clearpage % Start a new page
