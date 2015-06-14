@@ -225,8 +225,8 @@
                 {INTERACTIVE ROBOTICS LABORATORY}}
 %-------------------------------------------------                
 \faculty{\texorpdfstring{\href{Faculty Web Site URL Here (include http://)} % Your faculty's URL
-                {Faculty Name}} % Your faculty's name - this is currently used in the abstract page
-                {Faculty Name}}
+                {Yu Gu}} % Your faculty's name - this is currently used in the abstract page
+                {Yu Gu}}
 %-------------------------------------------------                
 \FACULTY{\texorpdfstring{\href{Faculty Web Site URL Here (include http://)} % Your faculty's URL
                 {FACULTY NAME (IN BLOCK CAPITALS)}} % Your faculty's name in capitals - this is not currently used anywhere in the template, cite it with \FACNAME if you want it
@@ -295,22 +295,22 @@
 {
   \btypeout{Abstract Page}
   \thispagestyle{empty}
-  \null\vfil
+  \null
   \begin{center}
     \setlength{\parskip}{0pt}
     {\normalsize \UNIVNAME \par} % University name in capitals
-    \bigskip
+    \medskip
     {\huge{\textit{Abstract}} \par}
-    \bigskip
+    \medskip
     {\normalsize \facname \par} % Faculty name
     {\normalsize \deptname \par} % Department name
-    \bigskip
+    \medskip
     {\normalsize \degreename\par} % Degree name
-    \bigskip
+    \medskip
     {\normalsize\bf \@title \par} % Thesis title
     \medskip
     {\normalsize by \authornames \par} % Author name
-    \bigskip
+    \medskip
   \end{center}
 }
 %----------------------------------------------------------------------------------------
