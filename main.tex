@@ -29,8 +29,36 @@
 
 \graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
 
-\usepackage[square,numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+%\usepackage[square,numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
 \usepackage{setspace}
+\usepackage{csquotes}% Recommended with biblatex
+%% http://tex.stackexchange.com/questions/5091/what-to-do-to-switch-to-biblatex
+\usepackage[%
+    backend=biber,
+    citestyle=numeric-comp,
+    bibstyle=numeric-comp,% authoryear,
+    doi=false,url=false,isbn=false,
+    sorting=none,% nyt,% none
+    hyperref=true,
+%   %style=apa,
+    natbib=true]{biblatex}
+
+\usepackage{listings}
+
+
+%\usepackage{createspace}
+
+
+%\addbibresource%
+%%   [datatype=bibtex]%
+%   {Libro_MS.bib}% extension required
+
+%*************************************************************************************
+% BIBLATEX SETTINGS POST-HYPERREF
+
+\bibliography{tanmay_bibliography.bib}% with biblatex
+
+\DeclareCiteCommand{\citetitle}{}{\printfield{title}}{;}{}
 \hypersetup{urlcolor=black, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
 \title{\ttitle} % Defines the thesis title - don't touch this
 
@@ -260,6 +288,7 @@ $\omega$ & angular frequency & rads$^{-1}$ \\
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters
 
+\input{Chapters/Introduction}
 \input{Chapters/Chapter1}
 %\input{Chapters/Chapter2} 
 %\input{Chapters/Chapter3}
@@ -290,13 +319,6 @@ $\omega$ & angular frequency & rads$^{-1}$ \\
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
-
-\label{Bibliography}
-
-\lhead{\emph{Bibliography}} % Change the page header to say "Bibliography"
-
-\bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
-
-\bibliography{Bibliography} % The references (bibliography) information are stored in the file named "Bibliography.bib"
+\printbibliography
 
 \end{document}  

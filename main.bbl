@@ -1,0 +1,46 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{entry}{none}
+    \entry{birthofflightcontrol}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=689c86f994cb242237b516d382cb4682}{G.D.\bibnamedelimi Padfield}{G\bibinitperiod\bibinitdelim P\bibinitperiod}{B.Lawrence}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=689c86f994cb242237b516d382cb4682}{G.D.\bibnamedelimi Padfield}{G\bibinitperiod\bibinitdelim P\bibinitperiod}{B.Lawrence}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{689c86f994cb242237b516d382cb4682}
+      \strng{fullhash}{689c86f994cb242237b516d382cb4682}
+      \field{sortinit}{0}
+      \field{labeltitle}{The Birth of Flight Control:An Engineering Analysis of the Wright Brothers' 1902 Glider}
+      \field{journaltitle}{The Aeronautical Journal, Department of Engineering, The University of Liverpool}
+      \field{month}{01}
+      \field{number}{No. 1078}
+      \field{title}{The Birth of Flight Control:An Engineering Analysis of the Wright Brothers' 1902 Glider}
+      \field{volume}{Vol. 107}
+      \field{year}{2008}
+    \endentry
+  \endsortlist
+  \missing{Reference3}
+  \missing{Reference1}
+  \missing{Reference2}
+\endrefsection
+\endinput
+
